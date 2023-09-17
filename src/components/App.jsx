@@ -1,7 +1,14 @@
-export const App = () => {
+import Form from './Form/Form';
+import { ContactsList } from './ContactsList/ContactsList';
+import { Filter } from './Filter/Filter';
+import css from './App.module.css';
+
+export default function App() {
   return (
-    <div>
-      <h1>hw#06</h1>
+    <div className={css.global_wrapper}>
+      <Form />
+      <Filter />
+      <ContactsList />
     </div>
   );
-};
+}
