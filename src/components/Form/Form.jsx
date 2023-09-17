@@ -1,11 +1,9 @@
-// import { useState } from 'react';
 import css from './Form.module.css';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/store/contactsSlice/contactsSlice';
 
 export default function Form() {
   const dispatch = useDispatch();
-  const state = useSelector(state => state.contacts.contacts);
 
   const handleSubmit = e => {
     e.preventDefault();

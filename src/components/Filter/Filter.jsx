@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 import { useDispatch } from 'react-redux';
 import { setStatusFilter } from 'redux/store/filterSlice/filterSlice';
@@ -19,8 +18,3 @@ export const Filter = () => {
     </div>
   );
 };
-
-// Filter.propTypes = {
-//   value: PropTypes.string.isRequired,
-//   onChange: PropTypes.func,
-// };
